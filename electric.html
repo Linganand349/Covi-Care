@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Billing</title>
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="css/electricstyle.css" />
+  </head>
+  <body>
+    <div id="main-div">
+      <h1 class="notice">Electric Board</h1>
+      <!-- form starts here -->
+      <form>
+        <div>
+          <!-- reading the user's name -->
+          <label class="notice">
+            Enter your name :
+            <input type="text" id="name" maxlength="15" class="notice" />
+          </label>
+        </div>
+        <div>
+          <!-- selecting items to be billed. We use checkboxes here -->
+          <h3 class="notice">Select items</h3>
+          <input type="checkbox" id="4-2.39" value="4-2.39" />
+          <label for="4-2.39" class="notice">
+            4 X 100-Watt bulbs for $2.39
+          </label>
+          <br />
+          <input type="checkbox" id="8-4.29" value="8-4.29" />
+          <label for="8-4.29" class="notice">
+            8 X 100-Watt bulbs for $4.29
+          </label>
+          <br />
+          <input type="checkbox" id="4-3.95" value="4-3.95" />
+          <label for="4-3.95" class="notice">
+            4 X Long-life 100-Watt bulbs for $3.95
+          </label>
+          <br />
+          <input type="checkbox" id="8-7.49" value="8-7.49" />
+          <label for="8-7.49" class="notice">
+            8 X Long-life 100-Watt bulbs for $7.49
+          </label>
+        </div>
+        <div>
+          <!-- choosing payment option. User can select only one method. So we use radio button -->
+          <h3 class="notice">Payment Options</h3>
+          <input type="radio" id="visa" value="visa" name="payment" />
+          <label for="visa" class="notice"> Visa </label>
+          <input type="radio" id="master" value="master" name="payment" />
+          <label for="master" class="notice"> Master Card </label>
+          <input type="radio" id="rupay" value="rupay" name="payment" />
+          <label for="rupay" class="notice"> RuPay </label>
+        </div>
+        <div id="button-div">
+          <!-- submit and reset buttons -->
+          <p>
+            <input type="submit" value="Submit Form" class="notice-button" />
+            <input type="reset" value="Clear Form" class="notice-button" />
+          </p>
+        </div>
+        <!-- form ends here -->
+      </form>
+    </div>
+  </body>
+</html>

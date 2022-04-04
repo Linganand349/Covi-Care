@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+:root{
+    --blue:#3c6382;
+    --dark-blue:#0a3d62;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border:none;
+    text-transform: capitalize;
+    transition: all .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+*::selection{
+    background:var(--dark-blue);
+    color:#fff;
+}
+body{
+		 background:url(../images/bedg.jpg) no-repeat;
+		 background-size: cover;
+		 background-position: center;
+		 background-attachment: fixed;
+	}

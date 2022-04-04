@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ques No 24</title>
+</head>
+<body>
+	<h2>Select Fruits</h2>
+	<form id="form">
+		<input type="checkbox" name="" value=".59" onclick="calculate()"> Apple 
+		<input type="checkbox" name="" value=".49" onclick="calculate()"> Orange
+		<input type="checkbox" name="" value=".39" onclick="calculate()"> Banana
+	    <br><br>
+    </form>
+	<button onclick="totalCost()"> Submit </button>
+    
+    <script type="text/javascript">
+    	var sum;
+    	var dom = document.getElementById('form');
+    	var el = dom.getElementsByTagName('input');
+    	function calculate(){
+    		sum = 0;
+    		for (var i=0; i<el.length; i++) {
+			     if(el[i].checked)
+			     	{
+			     		sum += Number(el[i].value);
+			     	}
+    	    }
+    	}
+
+    	function totalCost()
+    	{
+    	    var salesTax = 0.05 * sum;
+            var total_cost = sum + salesTax;
+    	    alert("Your total cost is $"+total_cost.toFixed(2));
+
+    	    return false;
+    	}
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title> Sticky Notes </title>
+	<link rel="stylesheet" href="css/stickyStyle.css">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+daughter" />
+</head>
+<body>
+	<div class="main">
+		<div class="content1"> 
+			<button class="btn btn-success" onclick="typeNote()"> Add Note </button>
+		</div>
+		<div class="content2"> </div>
+		<div class="content3"> 
+			<form>
+				<textarea id="note" placeholder="Write Note..." maxlength="100"> </textarea>
+				<div id="sub" class="svg">
+				
+					<label>Submit</label>
+				</div>
+				<div id="close" class="svg">
+					<label>Close</label>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	<script src="css/stickyscript.js"> </script>	
+	
+</body>
+</html>
